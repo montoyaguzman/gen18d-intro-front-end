@@ -1,0 +1,13 @@
+# Practica A
+Realizar un mapa conceptual de The complete guide to NPM.
+
+# Practica B
+Definir los siguientes conceptos:
+Entorno de ejecución.
+Manejador de paquetes.
+Diferencia entre node y npm.
+CLI, comando, dependencia, gestor de dependencia, dependencia de desarrollo y script.
+Cliente y servidor.
+API.
+Módulo.
+Paquete.
