@@ -1,0 +1,21 @@
+### Glosario
+
+- **Sistema operativo:** Es el software que coordina y dirige todos los servicios y aplicaciones que utiliza el usuario en una computadora.
+- **Kernel:** El kernel es el núcleo de un sistema operativo y, por tanto, la interfaz (middleware) entre el software y el hardware.
+- **Ip:** La dirección IP es una etiqueta numérica, por ejemplo "192.0.10.1" que identifica, de manera lógica y jerárquica, a una interfaz en la red. Existen IP públicas y IP privadas.
+- **Dominio:**  Es una dirección web compuesta por un nombre de sitio web y una extensión de dominio. Ejemplo: google.com
+- **URL:** Es una dirección web compuesta por al menos el protocolo, dominio y ruta.
+- **DNS:** Es un tipo de servidor de redes de computadora que en encarga de convertir direcciones web en dominios IP y viceversa. Ejemplo: 8.8.8.8 => www.google.com
+- **Cliente:** Es quien solicita información dentro de un sistema informatico.
+- **Request:** Es una solicitud de información.
+- **Response:** Es la entrega de información de un servidor a un cliente.
+- **Servidor:** Es una instancia fisica o lógica que responde peticiones (request).
+- **Estándar:** Es un patrón o modelo a seguir, generalmente derivado de un documento o certificación.
+- **Buena práctica:** Es un actividad que se ha demostrado que funciona bien y produce buenos resultados, y, por lo tanto, se recomienda como modelo.
+- **Path:** Es una ruta o dirección donde se encuentra alojado un recurso en un sistema de archivos. Existen rutas relativas como ../../my-docs o absolutas como C:\users\juan\Documents\tarea\tesis.doc
+- **Puerto:** un lugar donde se abre una conexion para acceder a un servicio.
+- **Dummy:** Es un dato o elemento de prueba, sirve para simular datos.
+- **Scaffolding:** Estructura de carpetas y archivos de un proyecto de desarrollo
+- **Compilar:** Es convertir el codigo fuente en codigo que la computadora interpreta (Ejemplo, en java el codigo fuente .java se compila a un .class para poder ejecutar).
+- **Transpilar:** Los lenguajes interpretados se dicen que se transpilan en lugar de compilarlos (Ejemplo, JS ES6 se transpila con Babel a ES5).
+- **Bundle:** Paquete de muchos archivos de codigo fuente que fue compilado o transpilado y que se usara para subir a alguen ambiente (de pruebas o productivo).
