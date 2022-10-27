@@ -1,8 +1,12 @@
+import Card from './Card';
+
 function Dashboard() {
     return (
-        <div>
-            <span>Componente Dashboard!</span>
-        </div>
+        <>
+            <Card/>
+            <Card/>
+            <Card/>
+        </>
     );
 }
 
