@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import SearchFilters from './components/SearchFilters';
-import Dashboard from './components/Dashboard';
+import CreatePage from './pages/CreatePage';
+import AboutPage from './pages/AboutPage';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
@@ -9,9 +10,13 @@ function App() {
       <div>
         <span>Componente App!</span>
       </div>
+      
       <NavBar></NavBar>
-      <SearchFilters></SearchFilters>
-      <Dashboard></Dashboard>
+      
+      <SearchPage/>
+      <CreatePage/>
+      <AboutPage/>
+      
     </React.Fragment>
   );
 }
