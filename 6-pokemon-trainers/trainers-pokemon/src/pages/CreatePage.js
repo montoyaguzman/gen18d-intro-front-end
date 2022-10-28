@@ -1,4 +1,10 @@
 function CreatePage() {
+
+    const handleInput = (event) => {
+        console.log(event.target.id);
+        console.log(event.target.value);
+    }
+
     return(
         <>
             <form>
@@ -16,7 +22,7 @@ function CreatePage() {
 
                 <span>Equipo: </span>
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"/>
+                <input type="text" id="patitoInput" name="patitoInput" onChange={handleInput}/>
                 <br/>
                 <br/>
                 <label for="lname">Last name:</label>
