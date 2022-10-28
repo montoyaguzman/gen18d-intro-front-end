@@ -1,7 +1,11 @@
+import Card from "../components/Card";
+import SearchFilters from "../components/SearchFilters";
+
 function SearchPage() {
     return(
         <>
-            SearchPage
+            <SearchFilters></SearchFilters>
+            <Card/>
         </>
     );
 }

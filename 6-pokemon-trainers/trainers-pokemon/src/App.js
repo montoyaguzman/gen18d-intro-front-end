@@ -9,12 +9,8 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <div>
-        <span>Componente App!</span>
-      </div>
       
-      <NavBar></NavBar>
-      
+      <NavBar></NavBar>      
       <SearchPage/>
       <CreatePage/>
       <AboutPage/>
