@@ -1,17 +1,21 @@
-function Card(props) { // props: { trainerComponent: {}, children: {lo que venga entrre las tags } }
+function Card({ trainerComponent }) { // props: { trainerComponent: {}, children: {lo que venga entrre las tags } }
     return(
         <>
         <div className="card">
             <div className="image-container"></div>
             <div className="card-content">
                 <div className="stats">
-                    <p className="region-tag">{props.trainerComponent.name}</p>
+                    <p className="region-tag">{trainerComponent.name}</p>
                     <div className="rank">
                         <p className="rank-label">rango</p>
-                        <p className="rank-tag">{props.trainerComponent.rank}</p>
+                        <p className="rank-tag">{trainerComponent.rank}</p>
                     </div>
                 </div>
-                <h2 className="trainer-name">{props.trainerComponent.region}</h2>
+                <h2 className="trainer-name">{trainerComponent.region}</h2>
+
+
+                
+
                 <div className="team">
                     <h3 className="team-label">Equipo</h3>
                     <div className="team-members">
@@ -29,6 +33,9 @@ function Card(props) { // props: { trainerComponent: {}, children: {lo que venga
                         </div>
                     </div>
                 </div>
+
+
+
                 <a href="#" className="more-info">más información</a>
             </div>
         </div>

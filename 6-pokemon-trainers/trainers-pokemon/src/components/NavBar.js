@@ -1,4 +1,7 @@
 function NavBar() {
+
+  const menus = [];
+
   return (
     <>
      <nav>
