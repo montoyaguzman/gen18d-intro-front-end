@@ -19,7 +19,7 @@
 }
 
 html {
-  background-color: var(--clr-lotion);
+  background-color: var(--clr-lotion, #fafafa);
   font-family: "Red Hat Mono", monospace;
   color: var(--clr-black-olive);
 }
