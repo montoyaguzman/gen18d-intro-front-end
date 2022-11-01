@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from "../components/Card";
 import ListCard from "../components/ListCard";
 import SearchFilters from "../components/SearchFilters";
@@ -36,9 +37,17 @@ const trainersArray = [
 ];
 
 function SearchPage() {
+
+    const [searchedData, setSearchedData] = React.useState({ name: 'lalala', isChampion: 'no' });
+
+    
+
     return(
         <>
-            <SearchFilters/>
+            <SearchFilters searchedData={searchedData} setSearchedData={setSearchedData}/>
+            En el papa
+            name: {searchedData.name}
+            isChampion: {searchedData.isChampion}
             <ListCard>
                 {trainersArray.map((trainerInArray, index) => <Card key={index} trainerComponent={trainerInArray}/> )}
             </ListCard>
