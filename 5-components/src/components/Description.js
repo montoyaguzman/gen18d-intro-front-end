@@ -1,8 +1,12 @@
+import React from "react";
+import {Titulo} from "./Description-style.js"
 
-function Description() {
+function Description(props) {
+
+
     return(
         <div>
-            <p> sefasgwliydakhsfxliaysrdfcwiludtlweyflweiudfquve,kdcvisgf; </p>
+            <Titulo>{props.daniel}</Titulo>
         </div>
     )
 }
