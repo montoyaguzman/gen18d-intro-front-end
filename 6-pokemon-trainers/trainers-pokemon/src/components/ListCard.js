@@ -2,7 +2,9 @@ function ListCard(props) { // props: { children: {lo que venga entrre las tags }
     return(
         <>
             INICIO
-            {props.children}
+            <div class="cards-container container-80">
+                {props.children}
+            </div>
             FIN
         </>
     );
