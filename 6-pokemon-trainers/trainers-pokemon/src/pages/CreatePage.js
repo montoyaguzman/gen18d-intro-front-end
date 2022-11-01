@@ -10,7 +10,7 @@ function CreatePage() {
         // pokemons: [],
     });
 
-    const handleInput = (event) => {
+    const handleChangeForm = (event) => {
         // console.log(event);
         // console.log(event.target); // componente html
         // console.log(event.target.id); // id componente
@@ -18,8 +18,13 @@ function CreatePage() {
         const id = event.target.id;
         const value = event.target.value;
 
-        let newTrainer = { ...trainer };
+        console.log(id, value);
 
+        let newTrainer = { ...trainer };
+        newTrainer[id] = value;
+
+        
+        console.log(newTrainer);
         // if (id === 'trainerName') {
         //     // newTrainer.name = value
         //     newTrainer['name'] = value
@@ -28,22 +33,11 @@ function CreatePage() {
         //     // newTrainer.rank = value
         //     newTrainer['rank'] = value
         // }
-        newTrainer[id] = value;
+        
 
         setTrainer(newTrainer);
         console.log('trainer', trainer);
 
-    }
-
-    const handleSelect = (event) => {
-        const id = event.target.id;
-        const value = event.target.value;
-        console.log(id, value);
-        let newTrainer = { ...trainer };
-        newTrainer[id] = value;
-        console.log('newTrainer', newTrainer)
-        setTrainer(newTrainer);
-        console.log('trainer', trainer);
     }
 
     return(
@@ -53,18 +47,23 @@ function CreatePage() {
                 <span>Entrenador </span>
                 <br/>
                 <label for="fname">Nombre:</label>
-                <input type="text" id="trainerName" name="trainerName" onChange={handleInput}/>
+                <input type="text" id="trainerName" name="trainerName" onChange={handleChangeForm}/>
                 <br/>
                 <br/>
                 <label for="rankTrainer">Rango:</label>
-                <input type="text" id="rankTrainer" name="rankTrainer" onChange={handleInput}/>
+                <input type="text" id="rankTrainer" name="rankTrainer" onChange={handleChangeForm}/>
 
                 <label for="region">Region:</label>
-                <select name="region" id="region" onChange={handleSelect}>
+                <select name="region" id="region" onChange={handleChangeForm}>
                     <option value="kanto">kanto</option>
                     <option value="alola">alola</option>
                     <option value="johto">johto</option>
                 </select>
+
+                <h3>Mis datos</h3>
+                <div>
+                    {Object.keys(trainer).map(key => <span>{trainer[key]}<br/></span>)}
+                </div>
 
                 {/* <input type="checkbox" id="liga1" name="liga1" value="liga1"/>
                 <label for="liga1">liga 1</label><br/>
