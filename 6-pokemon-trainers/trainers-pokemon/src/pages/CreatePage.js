@@ -62,7 +62,7 @@ function CreatePage() {
 
                 <h3>Mis datos</h3>
                 <div>
-                    {Object.keys(trainer).map(key => <span>{trainer[key]}<br/></span>)}
+                    {Object.keys(trainer).map((key, index) => <div key={index}>{trainer[key]}</div>)}
                 </div>
 
                 {/* <input type="checkbox" id="liga1" name="liga1" value="liga1"/>
