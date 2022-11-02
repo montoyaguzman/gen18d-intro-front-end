@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Character = ({character =""}) => {
-    const {name, image, species} = character
+    const {name, image, species, gender} = character
 
   return (
     <div className="col-md-4 mb-2">
@@ -12,8 +12,9 @@ const Character = ({character =""}) => {
             className="card-img-top"
             ></img>
             <div className="card-body">
-                <h5>{name}</h5>
+                <h3>{name}</h3>
                 <p>{species}</p>
+                <p>{gender}</p>
             </div>
         </div>
     </div>

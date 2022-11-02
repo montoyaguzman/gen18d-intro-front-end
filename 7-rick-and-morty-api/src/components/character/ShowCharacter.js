@@ -2,9 +2,10 @@ import Character from "./Character";
 
 import React from 'react'
 import Loading from "../../styled-components/Loading";
+import { useFetch } from "../../hooks/useFecth";
 
 const ShowCharacter = ({name}) => {
-    const [characters, loading] = llamadaAPI(name);
+    const [characters, loading] = useFetch(name);
 
     if (loading) {
         return <Loading/>

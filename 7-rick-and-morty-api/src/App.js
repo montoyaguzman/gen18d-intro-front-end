@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import Form from './components/Form';
+import ShowCharacter from './components/character/ShowCharacter';
 import './App.css';
+
 
 function App() {
 
@@ -9,11 +11,11 @@ function App() {
   return (
     <div>
       <h1>Rick&Morty API</h1>
-      <Form/>
+      <Form setName={setName}/>
       <button>
         Reset
       </button>
-    {/* <ShowCharacter/> */}
+      <ShowCharacter name={name}/>
     </div>
   );
 }
