@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 
 
 export const useFetch = (name) => {
-    const [characters, setChatacters] = useState([]);
+    const [characters, setCharacters] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export const useFetch = (name) => {
             }
             const data = await res.json();
             console.log([...data.results]);
-            setCharacter([...data.results]);
+            setCharacters([...data.results]);
         } catch (error) {
             console.log(error);
             return Swal.fire({
