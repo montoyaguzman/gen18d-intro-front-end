@@ -1,8 +1,9 @@
 import React from 'react'
+import { useForm } from '../hooks/useForm';
 import Swal from 'sweetalert2';
 
 const Form = ({setName}) => {
-    const [inputs, handleChange, reset] = useFrom({name:""});
+    const [inputs, handleChange, reset] = useForm({name:""});
     const {name}=inputs
 
     const handleSubmit = (e)=>{
@@ -20,7 +21,19 @@ const Form = ({setName}) => {
         reset()
     }
   return (
-    <div>Form</div>
+    <form onSubmit={handleSubmit}>
+        <input
+        type="text"
+        value={name}
+        onChange={handleChange}
+        className="form-control mb-2"
+        name="name"
+        placeholder="Enter a character name">
+        </input>
+        <button className="btn btn-info" type="submit">
+            Search
+        </button>
+    </form>
   )
 }
 
