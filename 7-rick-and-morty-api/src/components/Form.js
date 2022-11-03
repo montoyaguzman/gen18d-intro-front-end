@@ -1,6 +1,9 @@
 import React from 'react'
 import { useForm } from '../hooks/useForm';
 import Swal from 'sweetalert2';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 const Form = ({setName}) => {
     const [inputs, handleChange, reset] = useForm({name:""});
@@ -22,17 +25,17 @@ const Form = ({setName}) => {
     }
   return (
     <form onSubmit={handleSubmit}>
-        <input
-        type="text"
-        value={name}
-        onChange={handleChange}
-        className="form-control mb-2"
-        name="name"
-        placeholder="Enter a character name">
-        </input>
-        <button className="btn btn-info" type="submit">
-            Search
-        </button>
+        <Stack direction="row" spacing={3}>
+            <TextField 
+            id="outlined-basic"
+            label="Enter a character name" 
+            variant="outlined"
+            value={name}
+            onChange={handleChange}
+            name="name"/>
+
+            <Button variant="contained"type="submit">Search</Button>
+        </Stack>
     </form>
   )
 }
