@@ -27,18 +27,16 @@ function Card({ trainerComponent }) { // props: { trainerComponent: {}, children
                 <div className="team">
                     <h3 className="team-label">Equipo</h3>
                     <div className="team-members">
-                        <div className="pokemon-tag">
-                            <p className="pokemon-tag--name">Charmander</p>
-                            <p className="pokemon-tag--level">Nivel: 24</p>
-                        </div>
-                        <div className="pokemon-tag">
-                            <p className="pokemon-tag--name">Bulbasaur</p>
-                            <p className="pokemon-tag--level">Nivel: 31</p>
-                        </div>
-                        <div className="pokemon-tag">
-                            <p className="pokemon-tag--name">Pikachu</p>
-                            <p className="pokemon-tag--level">Nivel: 26</p>
-                        </div>
+                        
+                        {trainerComponent.team.map(pokemon => {
+                            return (
+                                <div className="pokemon-tag">
+                                    <p className="pokemon-tag--name">{pokemon.name}</p>
+                                    <p className="pokemon-tag--level">Nivel: {pokemon.level}</p>
+                                </div>
+                            )
+                        })}
+        
                     </div>
                 </div>
 
