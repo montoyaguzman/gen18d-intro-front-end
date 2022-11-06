@@ -1,19 +1,17 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import CreatePage from './pages/CreatePage';
-import AboutPage from './pages/AboutPage';
-import SearchPage from './pages/SearchPage';
 import './App.css';
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
   return (
     <React.Fragment>
       
-      <NavBar></NavBar>      
-      <SearchPage/>
-      <CreatePage/>
-      <AboutPage/>
+      <NavBar></NavBar>
+      <div className="container">
+        <Outlet/>
+      </div>
       
     </React.Fragment>
   );

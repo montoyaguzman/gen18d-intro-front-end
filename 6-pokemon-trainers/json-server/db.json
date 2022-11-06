@@ -1,0 +1,125 @@
+{
+    "trainers": [
+        {
+            "name": "Ash Ketchum",
+            "img": "/misty.jpeg",
+            "rank": 2,
+            "region": "Kanto",
+            "tournaments": [
+                "liga naranja",
+                "alola"
+            ],
+            "team": [
+                {
+                    "name": "Pikachu",
+                    "level": 100
+                },
+                {
+                    "name": "Greninja",
+                    "level": 50
+                }
+            ],
+            "history": "hola soy ash"
+        },
+        {
+            "name": "Misty",
+            "img": "/misty.jpeg",
+            "rank": 20,
+            "region": "Kanto",
+            "tournaments": [],
+            "team": [
+                {
+                    "name": "Staryu",
+                    "level": 30
+                },
+                {
+                    "name": "Gyarados",
+                    "level": 60
+                },
+            ],
+            "history": "hola soy misty"
+        },
+        {
+            "name": "Alain",
+            "img": "/misty.jpeg",
+            "rank": 8,
+            "region": "Kalos",
+            "tournaments": [
+                "Kalos",
+                "Teselia"
+            ],
+            "team": [
+                {
+                    "name": "Charizard",
+                    "level": 70
+                },
+                {
+                    "name": "Naganadel",
+                    "level": 40
+                }
+            ],
+            "history": "hola soy alain"
+        },
+        {
+            "name": "Cynthia",
+            "img": "/misty.jpeg",
+            "rank": 8,
+            "region": "Sinnoh",
+            "tournaments": [
+                "Sinnoh",
+                "Kalos"
+            ],
+            "team": [
+                {
+                    "name": "Machamp",
+                    "level": 60
+                },
+                {
+                    "name": "Garchomp",
+                    "level": 70
+                }
+            ],
+            "history": "hola soy cynthia"
+        },
+        {
+            "name": "Iris",
+            "img": "/misty.jpeg",
+            "rank": 7,
+            "region": "Sinnoh",
+            "tournaments": [
+                "Teselia"
+            ],
+            "team": [
+                {
+                    "name": "Dragonite",
+                    "level": 60
+                },
+                {
+                    "name": "Dragonair",
+                    "level": 60
+                }
+            ],
+            "history": "hola soy iris"
+        },
+        {
+            "name": "James",
+            "img": "/misty.jpeg",
+            "rank": 7,
+            "region": "Kanto",
+            "tournaments": [
+                "Teselia"
+            ],
+            "team": [
+                {
+                    "name": "Koffing",
+                    "level": 40
+                },
+                {
+                    "name": "Growlithe",
+                    "level": 45
+                }
+            ],
+            "history": "hola soy james"
+        }
+    ]
+}

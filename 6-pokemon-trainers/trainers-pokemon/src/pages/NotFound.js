@@ -1,15 +1,19 @@
+import { Link } from "react-router-dom";
+import App from "../App";
+
 function NotFound() {
     return(
         <>
-            <div class="container-80">
-                <div class="image-container-404">
+            <App/>
+            <div className="container-80">
+                <div className="image-container-404">
                     <img src="/image-404.png" alt="Error - Página no encontrada"/>
                 </div>
-                <p class="error-pageNotFound">
-                    <span class="clr-dark-pink">Ooopsss! </span>
+                <p className="error-pageNotFound">
+                    <span className="clr-dark-pink">Ooopsss! </span>
                     Un Snorlax salvaje ha bloqueado tu camino.
                 </p>
-                <a href="#" class="btn-default">regresa al inicio</a>
+                <Link className="btn-default" to="/">regresa al inicio</Link>
             </div>
         </>
     );

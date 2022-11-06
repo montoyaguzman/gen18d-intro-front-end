@@ -1,4 +1,5 @@
 import React from 'react';
+import App from '../App';
 import Card from "../components/Card";
 import ListCard from "../components/ListCard";
 import SearchFilters from "../components/SearchFilters";
@@ -62,6 +63,7 @@ function SearchPage() {
 
     return(
         <>
+            <App/>
             <SearchFilters searchedData={searchedData} setSearchedData={setSearchedData}/>
             En el papa
             name: {searchedData.name}

@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
+import CreatePage from './pages/CreatePage';
+import AboutPage from './pages/AboutPage';
+import NotFound from './pages/NotFound';
+import SearchPage from './pages/SearchPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<SearchPage />} />
+          <Route path="create" element={<CreatePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
