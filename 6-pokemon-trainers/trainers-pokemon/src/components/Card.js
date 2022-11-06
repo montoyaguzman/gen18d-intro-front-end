@@ -9,7 +9,7 @@ function Card({ trainerComponent }) { // props: { trainerComponent: {}, children
         <>
         <div className="card">
             <div className="image-container">
-                <img src="/misty.jpeg" alt="imagen del entrendor" style={imgStyles}/>
+                <img src={trainerComponent.img} alt="imagen del entrendor" style={imgStyles}/>
             </div>
             <div className="card-content">
                 <div className="stats">
