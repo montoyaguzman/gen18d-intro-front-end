@@ -63,7 +63,6 @@ function SearchPage() {
 
     return(
         <>
-            <App/>
             <SearchFilters searchedData={searchedData} setSearchedData={setSearchedData}/>
             En el papa
             name: {searchedData.name}

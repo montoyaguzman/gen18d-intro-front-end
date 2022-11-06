@@ -44,7 +44,6 @@ function CreatePage() {
 
     return(
         <>
-            <App/>
             <div className="main-container">
                 <h1 className="form-title">Registro</h1>
                 <form className="add-trainer-form">

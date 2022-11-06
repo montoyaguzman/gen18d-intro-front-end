@@ -4,7 +4,6 @@ import App from "../App";
 function NotFound() {
     return(
         <>
-            <App/>
             <div className="container-80">
                 <div className="image-container-404">
                     <img src="/image-404.png" alt="Error - Página no encontrada"/>
