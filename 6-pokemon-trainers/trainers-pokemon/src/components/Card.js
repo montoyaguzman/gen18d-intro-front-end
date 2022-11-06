@@ -1,8 +1,16 @@
 function Card({ trainerComponent }) { // props: { trainerComponent: {}, children: {lo que venga entrre las tags } }
+
+    const imgStyles = {
+        width: '100%',
+        height: '100%',
+    }
+
     return(
         <>
         <div className="card">
-            <div className="image-container"></div>
+            <div className="image-container">
+                <img src="/misty.jpeg" alt="imagen del entrendor" style={imgStyles}/>
+            </div>
             <div className="card-content">
                 <div className="stats">
                     <p className="region-tag">{trainerComponent.name}</p>
