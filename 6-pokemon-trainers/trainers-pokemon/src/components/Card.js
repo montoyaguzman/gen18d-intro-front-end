@@ -21,9 +21,6 @@ function Card({ trainerComponent }) { // props: { trainerComponent: {}, children
                 </div>
                 <h2 className="trainer-name">{trainerComponent.region}</h2>
 
-
-                
-
                 <div className="team">
                     <h3 className="team-label">Equipo</h3>
                     <div className="team-members">

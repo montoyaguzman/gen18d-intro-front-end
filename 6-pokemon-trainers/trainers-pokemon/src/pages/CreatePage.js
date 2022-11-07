@@ -2,6 +2,8 @@ import React from 'react';
 import App from '../App';
 import { Table } from '../components/Table/Table';
 
+const URL = 'http://localhost:4000';
+
 function CreatePage() {
 
     const [ trainer, setTrainer ] = React.useState({
@@ -36,10 +38,37 @@ function CreatePage() {
         //     newTrainer['rank'] = value
         // }
         
-
+        console.log(newTrainer)
         setTrainer(newTrainer);
-        console.log('trainer', trainer);
+        const normalizeTrainer = normalizeBodyTrainer(trainer);
+        createNewTrainer(normalizeTrainer);
 
+    }
+
+    const normalizeBodyTrainer = (trainer) => {
+        // trainer entrada
+        // trainerName: '', rankTrainer: 9999, region: '',
+        const newTrainer = {
+            name: trainer?.trainerName || '',
+            rank: trainer?.rankTrainer || '',
+            region: trainer?.region || '',
+        }
+        return newTrainer;
+        // trainer salida 
+        // "id": 7, "name": "Harrison", "img": "/misty.jpeg", "rank": 17, "region": "Johto", "tournaments": [ "Johto" ], "team": [ { "name": "Koffing", "level": 40 }, { "name": "Growlithe", "level": 45 } ], "history": "hola soy Johto"
+    }
+
+    const createNewTrainer = async (trainer) => {
+        const config = {
+            method: 'POST',
+            body: JSON.stringify(trainer),
+            headers: {"Content-type": "application/json; charset=UTF-8"}
+        };
+        const response = await fetch(`${URL}/trainers`, config);
+        const status = await response.status
+        if (status === 201) {
+            alert('todo OK con el alta')
+        }
     }
 
     return(
