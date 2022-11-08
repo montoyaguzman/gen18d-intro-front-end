@@ -22,6 +22,8 @@ function SearchPage() {
         setTrainersArray(trainers)
     }
 
+    // se cicla la app: getTrainers();
+
     // if (!trainersArray?.length) {
     //     return <div>No hay info</div>
     // }

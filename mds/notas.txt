@@ -27,3 +27,10 @@ heroku => apps no estaticas => en la carpeta de montoya hay una clase xD
 getters y setter en POO o en JS
 
 spread operator ...
+
+
+https://github.com/typicode/json-server
+https://jsonformatter.curiousconcept.com/#
+
+https://vitejs.dev/
+https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
