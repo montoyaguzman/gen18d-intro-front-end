@@ -1,0 +1,11 @@
+{
+  "name": "trainers-api-fake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server -p 4000 --watch db.json"
+  },
+  "author": "montoyitag",
+  "license": "ISC"
+}

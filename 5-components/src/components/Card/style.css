@@ -1,0 +1,25 @@
+.card{
+    border: 1px solid blue;
+    border-radius: 15px;
+    display: block;
+    height: 310px;
+    width: 150px;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+.card--header{
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.card--body{
+    font-size: 18px;
+    color: black;
+}
+
+.card--footer{
+    color: white;
+    text-align: center;
+}

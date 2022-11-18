@@ -1,0 +1,36 @@
+filename.js => filename/index.js
+manual de router y de useEffect
+
+Codigo interpretado
+JS
+Php
+
+Codigo compilado
+Java
+C
+c++
+c#
+python
+go
+
+Clasificacion de los lenguajes (por nivel) => acceso al hardware de una computadora e interpretacion del codigo
+1. alto (java, python y js)
+2. medio (c, c++)
+3. bajo (ensamblador)
+
+Compilar
+Es convertir el codigo fuente en codigo que la computadora interpreta
+
+githubpages => internet => pagina estatica
+heroku => apps no estaticas => en la carpeta de montoya hay una clase xD
+
+getters y setter en POO o en JS
+
+spread operator ...
+
+
+https://github.com/typicode/json-server
+https://jsonformatter.curiousconcept.com/#
+
+https://vitejs.dev/
+https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
